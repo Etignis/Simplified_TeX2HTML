@@ -1,0 +1,38 @@
+<?//header("Location:404.php");?>
+<!DOCTYPE html>
+<html style='width: 100%; height: 100%; '>
+ <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>ТеХ</title>
+  <link href="style2.css" type="text/css" rel="stylesheet" />
+  <script src="jquery-1.10.2.js"></script>
+  <script src="tex.js"></script>
+  <!--[if IE]>
+   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <!--[if lt IE 9]>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+  <![endif]-->
+
+  <style>
+   article, aside, details, figcaption, figure, footer,header,
+   hgroup, menu, nav, section, div { display: block; }
+  </style>
+ </head>
+ 
+ <body style='width: 100%; height: 100%;'>
+ <div align=center><br>
+ <span class='label'> Исходник (синтаксис ТеХ):<span><br>
+  <textarea rows=15 cols=65 id='tex_source' class='cont'></textarea>
+    <div> 
+	 <button id='example'>Использовать пример</button>   
+	 <button id='clear'>Очистить поле ввода</button>  
+	 <button id='go'>Преобразовать</button> 
+	 <button id='renew'>Очистить результат</button> </div>
+  <span class='label'>Результат:</span><br>
+  <div id='tex_result' class='cont' align=left></div> 
+ </div>
+ <br><br>
+ </body>
+</html>
